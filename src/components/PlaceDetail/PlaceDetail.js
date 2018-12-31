@@ -10,7 +10,7 @@ const placeDetail = props => {
     modalContent = (
       <View>
         <Image source={props.selectedPlace.placeImage}/>
-        <Text style={styles.placeName}>{props.selectedPlace.value}</Text>
+        <Text style={styles.placeName}>{props.selectedPlace.name}</Text>
       </View>
     )
   }

@@ -21,7 +21,6 @@ class App extends Component<Props> {
     this.props.onSelectPlace(key);
   }
 
-
   modalClosedHandler = () => {
     this.props.onDeselectPlace();
   }
@@ -63,9 +62,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAddPlace: (name) => dispatch(addPlace(name)),
+    onAddPlace: name => dispatch(addPlace(name)),
     onDeletePlace: () => dispatch(deletePlace()),
-    onSelectPlace: (key) => dispatch(selectPlace(key)),
+    onSelectPlace: key => dispatch(selectPlace(key)),
     onDeselectPlace: () => dispatch(deselectPlace())
   }
 }
