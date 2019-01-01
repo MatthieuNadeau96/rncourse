@@ -7,7 +7,7 @@ class PlaceInput extends Component {
   }
 
   componentDidMount() {
-    
+
   }
 
   placeNameChangedHandler = (val) => {
