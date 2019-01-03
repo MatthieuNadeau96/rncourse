@@ -24,7 +24,7 @@ const placeDetail = props => {
         {modalContent}
         <View>
           <TouchableOpacity>
-            <Icon name="ios-trash" size={30} color="red" />
+            <Icon size={30} name="md-trash" color="red" />
           </TouchableOpacity>
           <Button title="Close" onPress={props.onModalClosed} />
         </View>
